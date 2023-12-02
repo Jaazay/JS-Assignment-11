@@ -1,0 +1,97 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fdf5e6; /* Light Peach */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo-container {
+    text-align: center;
+}
+
+h1 {
+    color: #e74c3c; /* Alizarin Red */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.todo-input {
+    margin-bottom: 20px;
+}
+
+.todo-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    background-color: #f8d7da; /* Light Red */
+    border: 1px solid #f5c6cb; /* Lighter Red */
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.todo-item:hover {
+    background-color: #f3b1b5; /* Lighter Red on hover */
+}
+
+.todo-item input {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #f5c6cb; /* Lighter Red */
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.todo-item input:focus {
+    border-color: #e44d26; /* Flame */
+    outline: none;
+}
+
+.todo-item button {
+    background-color: #007bff; /* Dodger Blue */
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.todo-item button:hover {
+    background-color: #0056b3; /* Sapphire on hover */
+}
+
+.todo-item button:last-child {
+    background-color: #6c757d; /* Ash Gray */
+    margin-left: 5px;
+}
+
+.todo-item button:last-child:hover {
+    background-color: #5a6268; /* Gunmetal on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .todo-item {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .todo-item input {
+        margin-bottom: 10px;
+    }
+
+    .todo-item button {
+        width: 100%;
+    }
+}

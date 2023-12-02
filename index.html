@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap">
+
+    <title>Todo App</title>
+</head>
+<body>
+    <div class="todo-container">
+        <h1>Todo App</h1>
+        <div class="todo-input">
+            <input type="text" id="newTodo" placeholder="Add a new todo">
+            <button onclick="addTodo()">Add</button>
+            <button onclick="deleteAllTodos()">Delete All</button>
+        </div>
+        <ul id="todoList" class="todo-list"></ul>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
